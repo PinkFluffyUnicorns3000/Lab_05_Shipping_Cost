@@ -1,15 +1,19 @@
 /*
 class ShippingTax
 main()
+    Double priceOfOrder
+    Double total
     output “What is the price of your order?”
-    input num priceOfOrder
+    input priceOfOrder
     if priceOfOrder >= 100 then
         output “Your shipping cost is free so your total is “ +
            priceOfOrder
     else
         shippingTax = priceOfOrder * 0.02
+        total = priceOfOrder + shippingTax
+        total = round(total * 100) /100.00
         output “Your shipping cost is “ + shippingCost +
-            “ so your total is”  + priceOfOrder+salesTax
+            “ so your total is”  + total
         endIf
     return
 EndClass
